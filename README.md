@@ -10,6 +10,9 @@ Script and results for the publilcation are in the data branch.
 ## **Usage**
 
 ### **Step1** Ecological Networks Inference 
+
+Infer ecological networks from metagenomic taxonomic classification results 
+
 ```
 usage: thesis.py interaction [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
                              [-f FLAG] [-o OUTPUT]
@@ -35,6 +38,8 @@ optional arguments:
 
 ### **Step2** Driver Species Identification
 
+Identify driver species from a multilayer ecological network 
+
 ```
 usage: thesis.py drivers [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
                          input_folder
@@ -54,7 +59,12 @@ optional arguments:
 
 ### **Step3** Simulate Fecal Metagenomic Transplantation (FMT) Process
 
+Simulate the FMT process following the Generalized Lotka-Volterra (GLV) model
+
 #### a) FMT donor samples 
+
+Add input donor sample directly to a given disease sample
+
 ```
 usage: thesis.py fmt_all [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
                          [-s STRENGTH] [-o OUTPUT]
@@ -78,6 +88,9 @@ optional arguments:
 ```
 
 #### b) FMT driver species 
+
+Add equal amounts of driver species to the disease sample
+
 ```
 usage: thesis.py fmt_driver [-h] [-i DRIVER] [-a AMOUNT] [-m MEDIUM]
                             [-d MODEL] [-p PERCENTAGE] [-s STRENGTH]
@@ -107,7 +120,7 @@ optional arguments:
 
 #### c) FMT only
 
-Given ecological networks, fmt_only only simulate species abundance changes following the GLV model
+Given ecological networks of after-FMT samples, fmt_only only simulate species abundance changes following the GLV model
 
 ```
 usage: thesis.py fmt_only [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
