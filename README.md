@@ -5,7 +5,12 @@ Script and results for the publilcation are in the data branch.
 
 ## Installation 
 
-**Dependencies:** [Python 3.x](https://www.python.org/download/releases/3.0/)
+```
+pip install micom
+pip install pulp
+```
+
+**Dependencies:** [Python 3.x](https://www.python.org/download/releases/3.0/), database of the genome-scale metabolic reconstruction of human gut microbes [AGORA database](https://github.com/VirtualMetabolicHuman/AGORA),  a python package for metabolic modeling of microbial communities [MICOM](https://github.com/micom-dev/micom), a python package of an LP modeler [PuLP](https://pypi.org/project/PuLP/)
 
 ## **Usage**
 
