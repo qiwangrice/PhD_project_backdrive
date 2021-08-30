@@ -1,7 +1,7 @@
 # **[Control Theory Metagenome] Pipeline**
 
-Find driver species from real metagenomic data and simulate fecal microbial transplantation FMT process
-Script and results for the publilcation are in the data branch. 
+Find driver species from real metagenomic data and simulate fecal microbial transplantation (FMT) process
+Data analysis script and final results for the publilcation are in the data branch. 
 
 ## Installation 
 
@@ -14,17 +14,41 @@ pip install pulp
 
 ## **Usage**
 
+Bacdrive pipeline contains four modules: 
+1. ecological network inferences
+2. driver species identification
+3. FMT process simulation: a) donor sample transplantation b) driver species transplantation
+
+```
+usage: bacdrive.py [-h] {interaction,driver,fmt_donor,fmt_driver,fmt_only} ...
+
+positional arguments:
+  {interaction,driver,fmt_donor,fmt_driver,fmt_only}
+                        sub-command help
+    interaction         Bacterial interaction inference using MICOM
+    driver              Driver nodes detection using MDSM
+    fmt_donor           After-FMT community construction and simulation
+                        following the GLV model
+    fmt_driver          Afte-driver species transplantation (ADT) community
+                        consturction and simulation following the GLV model
+    fmt_only            After-FMT or ADT simulation following the GLV model
+
+optional arguments:
+  -h, --help            show this help message and exit
+```
+
 ### **Step1** Ecological Networks Inference 
 
 Infer ecological networks from metagenomic taxonomic classification results 
 
 ```
-usage: thesis.py interaction [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
-                             [-f FLAG] [-o OUTPUT]
-                             input_file
+usage: bacdrive.py interaction [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
+                               [-f FLAG] [-o OUTPUT]
+                               input_file
 
 positional arguments:
-  input_file            Input file of a list of taxonomic classification files
+  input_file            Input file of a list of taxonomic classification file
+                        addresses
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -46,16 +70,16 @@ optional arguments:
 Identify driver species from a multilayer ecological network 
 
 ```
-usage: thesis.py drivers [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
-                         input_folder
+usage: bacdrive.py driver [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
+                          input_folder
 
 positional arguments:
-  input_folder          Input Folder of Bacteria Interaction Networks
+  input_folder          Input folder of bacteria interaction networks
 
 optional arguments:
   -h, --help            show this help message and exit
   -s STRENGTH, --strength STRENGTH
-                        Threshold of Interaction Strength, default 0.2
+                        Threshold of interaction strength, default 0.2
   -p PREFIX, --prefix PREFIX
                         Output file prefix, default driver_nodes
   -o OUTPUT, --output OUTPUT
@@ -71,12 +95,12 @@ Simulate the FMT process following the Generalized Lotka-Volterra (GLV) model
 Add input donor sample directly to a given disease sample
 
 ```
-usage: thesis.py fmt_all [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
-                         [-s STRENGTH] [-o OUTPUT]
-                         input_file
+usage: bacdrive.py fmt_donor [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
+                             [-s STRENGTH] [-o OUTPUT]
+                             input_file
 
 positional arguments:
-  input_file            Input Disease and Donor Samples File Address
+  input_file            Input disease and donor sample file addresses
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -87,7 +111,7 @@ optional arguments:
   -p PERCENTAGE, --percentage PERCENTAGE
                         Percentage of species removed, default 0.1
   -s STRENGTH, --strength STRENGTH
-                        Threshold of Interaction Strength, default 0.2
+                        Threshold of interaction strength, default 0.2
   -o OUTPUT, --output OUTPUT
                         Output file folder, default fmt_output
 ```
@@ -97,20 +121,20 @@ optional arguments:
 Add equal amounts of driver species to the disease sample
 
 ```
-usage: thesis.py fmt_driver [-h] [-i DRIVER] [-a AMOUNT] [-m MEDIUM]
-                            [-d MODEL] [-p PERCENTAGE] [-s STRENGTH]
-                            [-o OUTPUT]
-                            input_file
+usage: bacdrive.py fmt_driver [-h] [-i DRIVER] [-a AMOUNT] [-m MEDIUM]
+                              [-d MODEL] [-p PERCENTAGE] [-s STRENGTH]
+                              [-o OUTPUT]
+                              input_file
 
 positional arguments:
-  input_file            Input Disease Samples File Address
+  input_file            Input a list of disease sample file addresses
 
 optional arguments:
   -h, --help            show this help message and exit
   -i DRIVER, --driver DRIVER
                         Input Driver Species
   -a AMOUNT, --amount AMOUNT
-                        Input amount of driver species, default 4g
+                        Input amount of driver species, default 40g
   -m MEDIUM, --medium MEDIUM
                         Medium CSV file, default medium.csv
   -d MODEL, --model MODEL
@@ -125,11 +149,11 @@ optional arguments:
 
 #### c) FMT only
 
-Given ecological networks of after-FMT samples, fmt_only only simulate species abundance changes following the GLV model
+Given ecological networks of after-FMT or ADT samples, fmt_only only simulate species abundance changes following the GLV model
 
 ```
-usage: thesis.py fmt_only [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
-                          input-file
+usage: bacdrive.py fmt_only [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
+                            input-file
 
 positional arguments:
   input-file            Input file prefix
