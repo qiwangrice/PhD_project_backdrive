@@ -20,7 +20,7 @@ Bacdrive pipeline contains four modules:
 3. FMT process simulation: a) donor sample transplantation b) driver species transplantation
 
 ```
-usage: bacdrive.py [-h] {interaction,driver,fmt_donor,fmt_driver,fmt_only} ...
+usage: bakdrive.py [-h] {interaction,driver,fmt_donor,fmt_driver,fmt_only} ...
 
 positional arguments:
   {interaction,driver,fmt_donor,fmt_driver,fmt_only}
@@ -42,7 +42,7 @@ optional arguments:
 Infer ecological networks from metagenomic taxonomic classification results 
 
 ```
-usage: bacdrive.py interaction [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
+usage: bakdrive.py interaction [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
                                [-f FLAG] [-o OUTPUT]
                                input_file
 
@@ -66,7 +66,7 @@ optional arguments:
 **Example**
 
 ```
-python bacdrive.py interaction example/example_donor_input.txt -o example/donor_interaction
+python bakdrive.py interaction example/example_donor_input.txt -o example/donor_interaction
 ```
 
 ### **Step2** Driver Species Identification
@@ -74,7 +74,7 @@ python bacdrive.py interaction example/example_donor_input.txt -o example/donor_
 Identify driver species from a multilayer ecological network 
 
 ```
-usage: bacdrive.py driver [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
+usage: bakdrive.py driver [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
                           input_folder
 
 positional arguments:
@@ -91,7 +91,7 @@ optional arguments:
 ```
 **Example**
 ```
-python bacdrive.py driver example/donor_interaction -o example/donor_drivers
+python bakdrive.py driver example/donor_interaction -o example/donor_drivers
 ```
 
 
@@ -104,7 +104,7 @@ Simulate the FMT process following the Generalized Lotka-Volterra (GLV) model
 Add input donor sample directly to a given disease sample
 
 ```
-usage: bacdrive.py fmt_donor [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
+usage: bakdrive.py fmt_donor [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
                              [-s STRENGTH] [-o OUTPUT]
                              input_file
 
@@ -124,13 +124,17 @@ optional arguments:
   -o OUTPUT, --output OUTPUT
                         Output file folder, default fmt_output
 ```
+**Example**
+```
+python bakdrive.py fmt_donor example/example_fmt_input.txt -o example/fmt_donor_output
+```
 
 #### b) FMT driver species 
 
 Add equal amounts of driver species to the disease sample
 
 ```
-usage: bacdrive.py fmt_driver [-h] [-i DRIVER] [-a AMOUNT] [-m MEDIUM]
+usage: bakdrive.py fmt_driver [-h] [-i DRIVER] [-a AMOUNT] [-m MEDIUM]
                               [-d MODEL] [-p PERCENTAGE] [-s STRENGTH]
                               [-o OUTPUT]
                               input_file
@@ -158,7 +162,7 @@ optional arguments:
 
 **Example**
 ```
-python bacdrive.py fmt_driver example/example_disease_input.txt -i example/donor_drivers/driver_nodes.3layer.str02.txt -o example/fmt_driver_output
+python bakdrive.py fmt_driver example/example_disease_input.txt -i example/donor_drivers/driver_nodes.3layer.str02.txt -o example/fmt_driver_output
 ```
 
 #### c) FMT only
@@ -166,7 +170,7 @@ python bacdrive.py fmt_driver example/example_disease_input.txt -i example/donor
 Given ecological networks of after-FMT or ADT samples, fmt_only only simulate species abundance changes following the GLV model
 
 ```
-usage: bacdrive.py fmt_only [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
+usage: bakdrive.py fmt_only [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
                             input-file
 
 positional arguments:
@@ -180,6 +184,11 @@ optional arguments:
                         Output file prefix
   -o OUTPUT, --output OUTPUT
                         Output file prefix
+```
+
+**Example**
+```
+python bakdrive.py fmt_only example/fmt_driver_output/disease1_species_drivers -o example/disease1_drivers_fmt_only
 ```
 
 ## **Description**
