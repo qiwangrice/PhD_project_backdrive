@@ -1,0 +1,3 @@
+example/disease/disease3_species.txt
+example/disease/disease2_species.txt
+example/disease/disease1_species.txt
