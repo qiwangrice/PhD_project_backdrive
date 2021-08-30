@@ -1,0 +1,127 @@
+Klebsiella pneumoniae	51.57	5865
+Klebsiella oxytoca	3.09	351
+Klebsiella sp. LTGPAF-6F	0.29	33
+Klebsiella variicola	0.08	9
+Klebsiella michiganensis	0.07	8
+Klebsiella quasivariicola	0.07	8
+Klebsiella aerogenes	0.02	2
+Klebsiella sp. M5al	0.01	1
+Escherichia coli	4.81	547
+Citrobacter amalonaticus	0.85	97
+Citrobacter freundii	0.17	19
+Citrobacter werkmanii	0.01	1
+Citrobacter koseri	0.04	5
+Enterobacter cloacae	0.39	44
+Enterobacter hormaechei	0.04	5
+Enterobacter kobei	0.01	1
+Enterobacter cloacae complex 'Hoffmann cluster III'	0.01	1
+Enterobacter sp. E20	0.06	7
+Enterobacter sp. ODB01	0.01	1
+Salmonella enterica	0.11	12
+Gibbsiella quercinecans	0.04	4
+Shigella sonnei	0.02	2
+Shigella dysenteriae	0.01	1
+Raoultella ornithinolytica	0.03	3
+Kluyvera intermedia	0.01	1
+Candidatus Hamiltonella defensa	0.01	1
+Candidatus Ishikawaella capsulata	0.01	1
+Kosakonia radicincitans	0.01	1
+Serratia marcescens	0.08	9
+Rahnella sp. Y9602	0.03	3
+Rahnella aquatilis	0.01	1
+Edwardsiella tarda	0.04	5
+Edwardsiella piscicida	0.01	1
+Edwardsiella sp. LADL05-105	0.01	1
+Brenneria goodwinii	0.01	1
+Psychrobacter sp. P11F6	0.08	9
+Oblitimonas alkaliphila	0.01	1
+Brucella ceti	0.02	2
+Rhizobium tropici	0.01	1
+Labrenzia aggregata	0.01	1
+Caulobacter sp. K31	0.01	1
+Castellaniella defragrans	0.01	1
+Lactobacillus paracasei	4.70	535
+Lactobacillus casei	0.65	74
+Lactobacillus plantarum	0.34	39
+Lactobacillus salivarius	0.25	28
+Lactobacillus rhamnosus	0.14	16
+Lactobacillus pentosus	0.05	6
+Lactobacillus gallinarum	0.04	4
+Lactobacillus buchneri	0.02	2
+Lactobacillus sanfranciscensis	0.02	2
+Lactobacillus backii	0.02	2
+Lactobacillus delbrueckii	0.01	1
+Lactobacillus helveticus	0.01	1
+Lactobacillus reuteri	0.01	1
+Lactobacillus fermentum	0.01	1
+Lactobacillus kefiranofaciens	0.01	1
+Lactobacillus crustorum	0.01	1
+Pediococcus acidilactici	2.18	248
+Pediococcus pentosaceus	0.43	49
+Pediococcus claussenii	0.01	1
+Streptococcus thermophilus	2.50	284
+Streptococcus parasanguinis	0.14	16
+Streptococcus salivarius	0.09	10
+Streptococcus anginosus	0.03	3
+Streptococcus gordonii	0.02	2
+Streptococcus mitis	0.02	2
+Streptococcus oralis	0.01	1
+Streptococcus agalactiae	0.01	1
+Streptococcus sp. A12	0.01	1
+Streptococcus himalayensis	0.01	1
+Enterococcus faecium	0.02	2
+Enterococcus faecalis	0.01	1
+Enterococcus durans	0.01	1
+Bacillus cereus	0.01	1
+Bacillus infantis	0.01	1
+Auricoccus indicus	0.01	1
+Gemella sp. oral taxon 928	0.01	1
+Pelosinus sp. UFO1	0.02	2
+Selenomonas sp. oral taxon 136	0.03	3
+Selenomonas sp. oral taxon 478	0.02	2
+Selenomonas sp. oral taxon 126	0.01	1
+Veillonella parvula	0.06	7
+Veillonella rodentium	0.02	2
+Dialister pneumosintes	0.07	8
+Negativicoccus massiliensis	0.03	3
+Megasphaera elsdenii	0.02	2
+Acidaminococcus fermentans	0.01	1
+Christensenella massiliensis	0.05	6
+Anaerostipes hadrus	0.01	1
+Flavonifractor plautii	0.01	1
+Mogibacterium pumilum	0.01	1
+Thermoanaerobacterium xylanolyticum	0.01	1
+Bifidobacterium animalis	0.10	11
+Bifidobacterium dentium	0.05	6
+Bifidobacterium longum	0.01	1
+Bifidobacterium kashiwanohense	0.01	1
+Scardovia inopinata	0.02	2
+Actinomyces oris	0.04	4
+Actinomyces meyeri	0.03	3
+Actinomyces hongkongensis	0.02	2
+Actinomyces sp. Chiba101	0.01	1
+Mycobacterium kansasii	0.03	3
+Brachybacterium sp. P6-10-X1	0.01	1
+Curtobacterium sp. MR_MD2014	0.01	1
+Pseudopropionibacterium propionicum	0.01	1
+Actinoalloteichus hymeniacidonis	0.01	1
+Streptomyces pristinaespiralis	0.01	1
+Atopobium parvulum	0.03	3
+Dehalococcoides mccartyi	0.04	4
+Pleurocapsa minor	0.01	1
+Akkermansia muciniphila	4.65	529
+Fusobacterium nucleatum	0.18	21
+Fusobacterium hwasookii	0.01	1
+Streptobacillus moniliformis	0.01	1
+Bacteroides caccae	0.01	1
+Odoribacter splanchnicus	0.01	1
+Fibrella sp. ES10-3-2-2	0.01	1
+Hymenobacter sedentarius	0.01	1
+Sphingobacterium sp. 21	0.01	1
+Candidatus Saccharibacteria oral taxon TM7x	0.01	1
+Methanobrevibacter smithii	2.80	318
+Methanobrevibacter sp. YE315	0.04	4
+Escherichia virus SUSP2	0.04	4
+Escherichia virus SUSP1	0.01	1
+Lactobacillus phage Sha1	0.01	1
+Lactobacillus phage iA2	0.01	1
