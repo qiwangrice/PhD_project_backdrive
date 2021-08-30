@@ -39,7 +39,13 @@ optional arguments:
 
 ### **Step1** Ecological Networks Inference 
 
-Infer ecological networks from metagenomic taxonomic classification results 
+Infer ecological networks from metagenomic taxonomic classification results using MICOM
+
+**Notes:** This module has three types of output files for each sample.\
+*_community.pickle: save community constructed by MICOM\
+*_growth_rate.tsv: the growth rates of a given community inferred by MICOM\
+*_ko.tsv: the relative growth rate interactions between two species inferred by MICOM.\
+It can be used to calculate the bacterial interaction matrix. 
 
 ```
 usage: bakdrive.py interaction [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
@@ -73,6 +79,10 @@ python bakdrive.py interaction example/example_donor_input.txt -o example/donor_
 
 Identify driver species from a multilayer ecological network 
 
+**Notes:** This module has two types of output files.\
+driver_nodes.*layer.str*.txt: a list of identified driver species\
+*_species_ko.str*.undirected.txt: an undirected ecological network of each sample 
+
 ```
 usage: bakdrive.py driver [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
                           input_folder
@@ -89,6 +99,7 @@ optional arguments:
   -o OUTPUT, --output OUTPUT
                         Output file folder, default output_driver
 ```
+
 **Example**
 ```
 python bakdrive.py driver example/donor_interaction -o example/donor_drivers
@@ -102,6 +113,9 @@ Simulate the FMT process following the Generalized Lotka-Volterra (GLV) model
 #### a) FMT donor samples 
 
 Add input donor sample directly to a given disease sample
+
+**Notes:** The input file is a comma-delimited file. \
+It contains two columns: the first one is a dieased sample and the second one is the corresponding donor sample. 
 
 ```
 usage: bakdrive.py fmt_donor [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
@@ -167,7 +181,12 @@ python bakdrive.py fmt_driver example/example_disease_input.txt -i example/donor
 
 #### c) FMT only
 
-Given ecological networks of after-FMT or ADT samples, fmt_only only simulate species abundance changes following the GLV model
+Given an inferred ecological network of an after-FMT or ADT sample, fmt_only simulates species abundance changes following the GLV model.
+
+**Notes:** According to the prefix of the input file, Bakdrive finds *_micom_input.tsv, *_ko.tsv, *_growth_rate.tsv as inputs.\
+*_micom_input.tsv: initial bacterial abundances after-FMT or ADT\
+*_ko.tsv: bacterial interaction matrix\
+*_growth_rate.tsv: growth rate vector
 
 ```
 usage: bakdrive.py fmt_only [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
