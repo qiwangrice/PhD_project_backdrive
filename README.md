@@ -65,6 +65,10 @@ optional arguments:
 
 **Example**
 
+```
+python bacdrive.py interaction example/example_donor_input.txt -o example/donor_interaction
+```
+
 ### **Step2** Driver Species Identification
 
 Identify driver species from a multilayer ecological network 
