@@ -89,6 +89,11 @@ optional arguments:
   -o OUTPUT, --output OUTPUT
                         Output file folder, default output_driver
 ```
+**Example**
+```
+python bacdrive.py driver example/donor_interaction -o example/donor_drivers
+```
+
 
 ### **Step3** Simulate Fecal Metagenomic Transplantation (FMT) Process
 
@@ -149,6 +154,11 @@ optional arguments:
                         Threshold of Interaction Strength, default 0.2
   -o OUTPUT, --output OUTPUT
                         Output file folder, default fmt_driver_output
+```
+
+**Example**
+```
+python bacdrive.py fmt_driver example/example_disease_input.txt -i example/donor_drivers/driver_nodes.3layer.str02.txt -o example/fmt_driver_output
 ```
 
 #### c) FMT only
