@@ -1,0 +1,341 @@
+[Eubacterium] rectale	27.76	1815
+Anaerostipes hadrus	3.09	202
+[Clostridium] bolteae	1.13	74
+Lachnoclostridium phocaeense	0.43	28
+[Clostridium] saccharolyticum	0.37	24
+Lachnoclostridium sp. YL32	0.21	14
+Lachnoclostridium phytofermentans	0.02	1
+Roseburia hominis	2.22	145
+Blautia hansenii	0.69	45
+Butyrivibrio hungatei	0.05	3
+Butyrivibrio proteoclasticus	0.02	1
+Herbinix luporum	0.06	4
+Anaerotignum propionicum	0.05	3
+Cellulosilyticum lentocellum	0.03	2
+Ruminococcus bicirculans	3.15	206
+Ruminococcus champanellensis	0.11	7
+Ruminococcus albus	0.06	4
+Ruminococcaceae bacterium CPB6	0.21	14
+Ethanoligenens harbinense	0.14	9
+[Clostridium] cellulosi	0.06	4
+[Clostridium] cellulolyticum	0.02	1
+Mageeibacillus indolicus	0.03	2
+[Eubacterium] hallii	1.94	127
+[Eubacterium] eligens	1.09	71
+[Eubacterium] cellulosolvens	0.12	8
+Eubacterium limosum	0.06	4
+Clostridioides difficile	1.07	70
+Peptoclostridium acidaminophilum	0.02	1
+Intestinimonas butyriciproducens	0.43	28
+Flavonifractor plautii	0.31	20
+Clostridium sp. SY8519	0.17	11
+Clostridium botulinum	0.03	2
+Clostridium cellulovorans	0.03	2
+Clostridium baratii	0.03	2
+Clostridium butyricum	0.02	1
+Clostridium pasteurianum	0.02	1
+Clostridium perfringens	0.02	1
+Clostridium tetani	0.02	1
+Clostridium saccharoperbutylacetonicum	0.02	1
+Clostridium carboxidivorans	0.02	1
+Geosporobacter ferrireducens	0.02	1
+Christensenella massiliensis	0.28	18
+Oscillibacter valericigenes	0.06	4
+Thermaerobacter marianensis	0.03	2
+Mogibacterium pumilum	0.02	1
+[Eubacterium] sulci	0.02	1
+Heliobacterium modesticaldum	0.05	3
+Desulfitobacterium metallireducens	0.02	1
+Thermoanaerobacterium thermosaccharolyticum	0.02	1
+Thermoanaerobacterium sp. RBIITD	0.02	1
+Streptococcus salivarius	0.96	63
+Streptococcus parasanguinis	0.47	31
+Streptococcus thermophilus	0.09	6
+Streptococcus suis	0.08	5
+Streptococcus agalactiae	0.06	4
+Streptococcus mitis	0.05	3
+Streptococcus constellatus	0.03	2
+Streptococcus anginosus	0.02	1
+Streptococcus pyogenes	0.03	2
+Streptococcus sp. FDAARGOS_192	0.03	2
+Streptococcus sanguinis	0.02	1
+Streptococcus pneumoniae	0.02	1
+Streptococcus pasteurianus	0.02	1
+Streptococcus pseudopneumoniae	0.02	1
+Streptococcus sp. oral taxon 431	0.02	1
+Streptococcus sp. I-G2	0.02	1
+Streptococcus sp. A12	0.02	1
+Lactococcus lactis	0.05	3
+Lactococcus garvieae	0.02	1
+Enterococcus faecium	0.38	25
+Enterococcus faecalis	0.03	2
+Enterococcus casseliflavus	0.02	1
+Lactobacillus delbrueckii	0.03	2
+Lactobacillus acidipiscis	0.02	1
+Bacillus cereus	0.02	1
+Bacillus licheniformis	0.02	1
+Bacillus sp. FJAT-22090	0.02	1
+Salimicrobium jeotgali	0.03	2
+Oceanobacillus iheyensis	0.02	1
+Paenibacillus polymyxa	0.03	2
+Paenibacillus sabinae	0.03	2
+Paenibacillus sp. JDR-2	0.02	1
+Paenibacillus donghaensis	0.02	1
+Paenibacillus beijingensis	0.02	1
+Paenibacillus physcomitrellae	0.02	1
+Planococcus antarcticus	0.02	1
+Planococcus maritimus	0.02	1
+Planococcus rifietoensis	0.02	1
+Staphylococcus epidermidis	0.02	1
+Staphylococcus pseudintermedius	0.02	1
+Alicyclobacillus acidocaldarius	0.03	2
+Tumebacillus sp. AR23208	0.02	1
+Exiguobacterium sibiricum	0.02	1
+Faecalitalea cylindroides	0.66	43
+Turicibacter sp. H121	0.09	6
+Faecalibaculum rodentium	0.06	4
+Selenomonas sp. oral taxon 126	0.05	3
+Selenomonas ruminantium	0.03	2
+Selenomonas sp. oral taxon 478	0.02	1
+Megamonas hypermegale	0.02	1
+Acidaminococcus fermentans	0.06	4
+Acidaminococcus intestini	0.03	2
+Veillonella parvula	0.02	1
+Veillonella rodentium	0.02	1
+Negativicoccus massiliensis	0.03	2
+Megasphaera elsdenii	0.02	1
+Finegoldia magna	0.02	1
+Murdochiella vaginalis	0.02	1
+Gottschalkia acidurici	0.02	1
+Ndongobacter massiliensis	0.02	1
+Limnochorda pilosa	0.02	1
+Bifidobacterium longum	8.49	555
+Bifidobacterium adolescentis	6.22	407
+Bifidobacterium pseudocatenulatum	1.22	80
+Bifidobacterium catenulatum	0.52	34
+Bifidobacterium kashiwanohense	0.41	27
+Bifidobacterium breve	0.14	9
+Bifidobacterium bifidum	0.12	8
+Bifidobacterium animalis	0.11	7
+Bifidobacterium angulatum	0.06	4
+Bifidobacterium dentium	0.06	4
+Bifidobacterium thermophilum	0.03	2
+Bifidobacterium scardovii	0.02	1
+Bifidobacterium actinocoloniiforme	0.02	1
+Scardovia inopinata	0.02	1
+Corynebacterium variabile	0.02	1
+Corynebacterium genitalium	0.02	1
+Corynebacterium mycetoides	0.02	1
+Corynebacterium falsenii	0.02	1
+Corynebacterium kroppenstedtii	0.02	1
+Corynebacterium glaucum	0.02	1
+Corynebacterium resistens	0.02	1
+Corynebacterium ureicelerivorans	0.02	1
+Corynebacterium sp. NML98-0116	0.02	1
+Mycobacterium kansasii	0.02	1
+Mycobacterium bovis	0.02	1
+Mycobacterium goodii	0.02	1
+Mycobacterium dioxanotrophicus	0.02	1
+Rhodococcus aetherivorans	0.02	1
+Gordonia polyisoprenivorans	0.02	1
+Rothia mucilaginosa	0.06	4
+Arthrobacter sp. U41	0.02	1
+Glutamicibacter arilaitensis	0.02	1
+Microbacterium aurum	0.02	1
+Microbacterium paludicola	0.02	1
+Microbacterium sp. PAMC 28756	0.02	1
+Cryobacterium sp. LW097	0.02	1
+Dermacoccus nishinomiyaensis	0.02	1
+Kytococcus sedentarius	0.02	1
+Cellulomonas flavigena	0.02	1
+Isoptericola dokdonensis	0.02	1
+Streptomyces pristinaespiralis	0.03	2
+Streptomyces albulus	0.02	1
+Streptomyces bingchenggensis	0.02	1
+Actinomyces oris	0.03	2
+Actinomyces meyeri	0.02	1
+Actinomyces sp. oral taxon 414	0.02	1
+Actinoplanes sp. SE50/110	0.02	1
+Salinispora arenicola	0.02	1
+Plantactinospora sp. KBS50	0.02	1
+Propionimicrobium sp. Marseille-P3275	0.02	1
+Cutibacterium granulosum	0.02	1
+Nocardioides dokdonensis	0.02	1
+Pseudonocardia dioxanivorans	0.02	1
+Allokutzneria albata	0.02	1
+Thermomonospora curvata	0.02	1
+Thermobifida fusca	0.02	1
+Actinobacteria bacterium IMCC26256	0.02	1
+Candidatus Planktophila vernalis	0.02	1
+Adlercreutzia equolifaciens	0.83	54
+Gordonibacter pamelaeae	0.14	9
+Gordonibacter massiliensis	0.08	5
+Gordonibacter urolithinfaciens	0.02	1
+Slackia heliotrinireducens	0.09	6
+Denitrobacterium detoxificans	0.03	2
+Phoenicibacter massiliensis	0.03	2
+Olsenella umbonata	0.11	7
+Olsenella uli	0.08	5
+Olsenella sp. Marseille-P2300	0.08	5
+Libanicoccus massiliensis	0.15	10
+Atopobium parvulum	0.02	1
+Coriobacterium glomerans	0.06	4
+Coriobacteriaceae bacterium 68-1-3	0.03	2
+Deinococcus gobiensis	0.03	2
+Deinococcus geothermalis	0.02	1
+Deinococcus actinosclerus	0.02	1
+Thermus aquaticus	0.02	1
+Dactylococcopsis salina	0.02	1
+Cyanobium sp. NIES-981	0.02	1
+Gloeobacter violaceus	0.02	1
+Fimbriimonas ginsengisoli	0.03	2
+Candidatus Promineofilum breve	0.02	1
+Acholeplasma oculi	0.02	1
+Bacteroides vulgatus	7.92	518
+Bacteroides ovatus	2.05	134
+Bacteroides caccae	1.04	68
+Bacteroides dorei	0.47	31
+Bacteroides thetaiotaomicron	0.46	30
+Bacteroides fragilis	0.44	29
+Bacteroides helcogenes	0.34	22
+Bacteroides cellulosilyticus	0.32	21
+Bacteroides caecimuris	0.21	14
+Bacteroides salanitronis	0.11	7
+Parabacteroides distasonis	0.38	25
+Parabacteroides sp. CT06	0.29	19
+Alistipes finegoldii	0.18	12
+Alistipes shahii	0.11	7
+Mucinivorans hirudinis	0.02	1
+Odoribacter splanchnicus	0.20	13
+Prevotella fusca	0.05	3
+Prevotella ruminicola	0.02	1
+Barnesiella viscericola	0.05	3
+Petrimonas mucosa	0.02	1
+Ornithobacterium rhinotracheale	0.03	2
+Flavobacterium gilvum	0.02	1
+Sphingobacterium sp. ML3W	0.02	1
+Pedobacter heparinus	0.02	1
+Mucilaginibacter paludis	0.02	1
+Haliscomenobacter hydrossis	0.02	1
+Chlorobaculum limnaeum	0.02	1
+Haemophilus parainfluenzae	0.47	31
+Haemophilus pittmaniae	0.05	3
+Haemophilus influenzae	0.02	1
+Aggregatibacter actinomycetemcomitans	0.02	1
+Aggregatibacter aphrophilus	0.02	1
+Actinobacillus equuli	0.02	1
+Pseudomonas aeruginosa	0.05	3
+Pseudomonas mendocina	0.02	1
+Pseudomonas pseudoalcaligenes	0.02	1
+Pseudomonas oryzihabitans	0.02	1
+Pseudomonas monteilii	0.02	1
+Pseudomonas syringae	0.03	2
+Pseudomonas rhizosphaerae	0.03	2
+Pseudomonas vancouverensis	0.02	1
+Pseudomonas veronii	0.02	1
+Pseudomonas antarctica	0.02	1
+Pseudomonas pohangensis	0.02	1
+Pseudomonas guangdongensis	0.02	1
+Acinetobacter sp. NCu2D-2	0.02	1
+Moraxella osloensis	0.02	1
+Escherichia coli	0.03	2
+Enterobacter cloacae	0.02	1
+Enterobacter asburiae	0.02	1
+Klebsiella oxytoca	0.02	1
+Salmonella enterica	0.02	1
+Kosakonia oryzae	0.02	1
+Shimwellia blattae	0.02	1
+Dickeya dadantii	0.02	1
+Dickeya sp. NCPPB 3274	0.02	1
+Pectobacterium carotovorum	0.02	1
+Buchnera aphidicola	0.02	1
+Pantoea vagans	0.02	1
+Halomonas aestuarii	0.05	3
+Marinobacterium aestuarii	0.03	2
+Alcanivorax dieselolei	0.02	1
+Endozoicomonas montiporae	0.02	1
+Alteromonas mediterranea	0.05	3
+Marinobacter salarius	0.02	1
+Shewanella japonica	0.02	1
+Spiribacter curvatus	0.03	2
+Acidihalobacter prosperus	0.02	1
+Stenotrophomonas maltophilia	0.02	1
+Xylella fastidiosa	0.02	1
+Zobellella denitrificans	0.03	2
+Sulfurifustis variabilis	0.03	2
+Vibrio sp. 2521-89	0.02	1
+Gluconobacter oxydans	0.02	1
+Gluconobacter albidus	0.02	1
+Acetobacter pasteurianus	0.02	1
+Roseomonas gilardii	0.02	1
+Granulibacter bethesdensis	0.02	1
+Nitrospirillum amazonense	0.05	3
+Pararhodospirillum photometricum	0.02	1
+Rhizobium leguminosarum	0.03	2
+Rhizobium gallicum	0.02	1
+Sinorhizobium sp. RAC02	0.02	1
+Xanthobacter autotrophicus	0.02	1
+Cohaesibacter sp. ES.047	0.02	1
+Sphingomonas taxi	0.02	1
+Sphingomonas sp. JJ-A5	0.02	1
+Sphingobium sp. C1	0.02	1
+Sphingopyxis macrogoltabida	0.02	1
+Altererythrobacter namhicola	0.02	1
+Altererythrobacter dongtanensis	0.02	1
+Roseovarius mucosus	0.03	2
+Paracoccus contaminans	0.02	1
+Roseobacter denitrificans	0.02	1
+Ketogulonicigenium vulgare	0.02	1
+Stappia sp. ES.058	0.02	1
+Thioclava nitratireducens	0.02	1
+Brevundimonas naejangsanensis	0.02	1
+Brevundimonas sp. DS20	0.02	1
+Phenylobacterium zucineum	0.02	1
+Asticcacaulis excentricus	0.02	1
+Acidovorax sp. RAC01	0.05	3
+Acidovorax citrulli	0.02	1
+Acidovorax sp. KKS102	0.02	1
+Comamonas testosteroni	0.02	1
+Comamonas kerstersii	0.02	1
+Rhodoferax ferrireducens	0.02	1
+Rhodoferax sp. DCY110	0.02	1
+Variovorax paradoxus	0.02	1
+Bordetella trematum	0.03	2
+Bordetella petrii	0.02	1
+Bordetella genomosp. 9	0.02	1
+Massilia sp. NR 4-1	0.05	3
+Herbaspirillum rubrisubalbicans	0.02	1
+Janthinobacterium agaricidamnosum	0.02	1
+Burkholderia metallica	0.02	1
+Burkholderia sp. PAMC 28687	0.02	1
+Cupriavidus gilardii	0.03	2
+Burkholderiales bacterium GJ-E10	0.02	1
+Vogesella sp. LIG4	0.02	1
+Azospira oryzae	0.02	1
+Candidatus Methylopumilus turicensis	0.02	1
+Desulfovibrio vulgaris	0.05	3
+Desulfovibrio africanus	0.03	2
+Desulfovibrio piger	0.03	2
+Desulfovibrio desulfuricans	0.02	1
+Desulfovibrio alaskensis	0.02	1
+Geobacter sp. M21	0.02	1
+Desulfuromonas sp. DDH964	0.02	1
+Desulfobulbus propionicus	0.03	2
+Desulfobacula toluolica	0.02	1
+Sorangium cellulosum	0.03	2
+Campylobacter coli	0.11	7
+Campylobacter jejuni	0.03	2
+Planctopirus limnophila	0.02	1
+Singulisphaera acidiphila	0.02	1
+Verrucomicrobiaceae bacterium GAS474	0.02	1
+Terriglobus saanensis	0.02	1
+Candidatus Solibacter usitatus	0.02	1
+Spirochaeta africana	0.02	1
+Sphaerochaeta coccoides	0.02	1
+Jonquetella anthropi	0.03	2
+Nitrospira defluvii	0.02	1
+Caldithrix abyssi	0.02	1
+Thermoplasmatales archaeon BRNA1	0.02	1
+Methanocella arvoryzae	0.02	1
+Nitrososphaera viennensis	0.02	1
+uncultured crAssphage	3.58	234

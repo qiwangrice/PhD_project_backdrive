@@ -1,0 +1,3 @@
+example/disease/disease3_species.txt,example/donor/donor1_species.txt
+example/disease/disease2_species.txt,example/donor/donor2_species.txt
+example/disease/disease1_species.txt,example/donor/donor3_species.txt
