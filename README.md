@@ -1,4 +1,4 @@
-# **[Control Theory Metagenome] Pipeline**
+# **Bakdrive Pipeline**
 
 Find driver species from real metagenomic data and simulate fecal microbial transplantation (FMT) process
 Data analysis script and final results for the publilcation are in the data branch. 
