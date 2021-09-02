@@ -15,8 +15,8 @@ pip install pulp
 ## **Usage**
 
 Bacdrive pipeline contains four modules: 
-1. ecological network inferences
-2. driver species identification
+1. Ecological network inferences
+2. Driver species identification
 3. FMT process simulation: a) donor sample transplantation b) driver species transplantation
 
 ```
@@ -42,9 +42,9 @@ optional arguments:
 Infer ecological networks from metagenomic taxonomic classification results using MICOM
 
 **Notes:** This module has three types of output files for each sample.\
-*_community.pickle: save community constructed by MICOM\
-*_growth_rate.tsv: the growth rates of a given community inferred by MICOM\
-*_ko.tsv: the relative growth rate interactions between two species inferred by MICOM.\
+[temp]_community.pickle: save community constructed by MICOM\
+[temp]_growth_rate.tsv: the growth rates of a given community inferred by MICOM\
+[temp]_ko.tsv: the relative growth rate interactions between two species inferred by MICOM.\
 It can be used to calculate the bacterial interaction matrix. 
 
 ```
@@ -80,8 +80,8 @@ python bakdrive.py interaction example/example_donor_input.txt -o example/donor_
 Identify driver species from a multilayer ecological network 
 
 **Notes:** This module has two types of output files.\
-driver_nodes.*layer.str*.txt: a list of identified driver species\
-*_species_ko.str*.undirected.txt: an undirected ecological network of each sample 
+driver_nodes. [customize]layer.str[customize].txt: a list of identified driver species\
+[temp]_species_ko.str[customize].undirected.txt: an undirected ecological network of each sample 
 
 ```
 usage: bakdrive.py driver [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
@@ -115,7 +115,20 @@ Simulate the FMT process following the Generalized Lotka-Volterra (GLV) model
 Add input donor sample directly to a given disease sample
 
 **Notes:** The input file is a comma-delimited file. \
-It contains two columns: the first one is a dieased sample and the second one is the corresponding donor sample. 
+It contains two columns: the first one is a dieased sample and the second one is the corresponding donor sample.\
+This module has seven types of output files for each sample.\
+[temp]_micom_input.tsv: input files for MICOM. \
+[temp]_community.pickle: save community constructed by MICOM.
+
+[temp]_ko.tsv: the relative growth rate interactions between two species inferred by MICOM. \
+It can be used to calculate the bacterial interaction matrix. 
+
+[temp] _growth_rate.tsv: the growth rates of a given community inferred by MICOM. 
+
+[temp].micom.donor.fmt.log: log of MICOM. 
+
+fmt_abd_[temp].txt: the last timepoint of species abundance. \
+fmt_timepoints_[temp].txt: a time series of species abundance.  
 
 ```
 usage: bakdrive.py fmt_donor [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
@@ -145,7 +158,20 @@ python bakdrive.py fmt_donor example/example_fmt_input.txt -o example/fmt_donor_
 
 #### b) FMT driver species 
 
-Add equal amounts of driver species to the disease sample
+Add equal amounts of driver species to the disease sample.\
+**Notes:**
+This module has seven types of output files for each sample.\
+[temp]_micom_input.tsv: input files for MICOM\
+[temp]_community.pickle: save community constructed by MICOM
+
+[temp]_growth_rate.tsv: the growth rates of a given community inferred by MICOM
+
+[temp]_ko.tsv: the relative growth rate interactions between two species inferred by MICOM.\
+It can be used to calculate the bacterial interaction matrix.
+
+[temp].micom.donor.fmt.log: log of MICOM\
+fmt_abd_[temp].txt: the last timepoint of species abundance\
+fmt_timepoints_[temp].txt: a time series of species abundance 
 
 ```
 usage: bakdrive.py fmt_driver [-h] [-i DRIVER] [-a AMOUNT] [-m MEDIUM]
@@ -183,10 +209,10 @@ python bakdrive.py fmt_driver example/example_disease_input.txt -i example/donor
 
 Given an inferred ecological network of an after-FMT or ADT sample, fmt_only simulates species abundance changes following the GLV model.
 
-**Notes:** According to the prefix of the input file, Bakdrive finds *_micom_input.tsv, *_ko.tsv, *_growth_rate.tsv as inputs.\
-*_micom_input.tsv: initial bacterial abundances after-FMT or ADT\
-*_ko.tsv: bacterial interaction matrix\
-*_growth_rate.tsv: growth rate vector
+**Notes:** According to the prefix of the input file, Bakdrive finds [temp]_micom_input.tsv, [temp]_ko.tsv, [temp]_growth_rate.tsv as inputs.\
+[temp]_micom_input.tsv: initial bacterial abundances after-FMT or ADT\
+[temp]_ko.tsv: bacterial interaction matrix\
+[temp]_growth_rate.tsv: growth rate vector
 
 ```
 usage: bakdrive.py fmt_only [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
