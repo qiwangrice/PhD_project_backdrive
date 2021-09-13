@@ -1,0 +1,25 @@
+@Total Number of Nodes: 112
+@Total number of drivers: 23
+Akkermansia_muciniphila
+Bacteroides_caccae
+Bacteroides_cellulosilyticus
+Bacteroides_dorei
+Bacteroides_eggerthii
+Bacteroides_fragilis
+Bacteroides_massiliensis
+Bacteroides_stercoris
+Bacteroides_uniformis
+Bacteroides_vulgatus
+Bifidobacterium_adolescentis
+Bifidobacterium_longum
+Clostridium_bolteae
+Clostridium_leptum
+Clostridium_symbiosum
+Dialister_invisus
+Escherichia_coli
+Eubacterium_eligens
+Eubacterium_ramulus
+Faecalibacterium_prausnitzii
+Prevotella_copri
+Roseburia_inulinivorans
+Ruminococcus_torques
