@@ -10,7 +10,7 @@ pip install micom
 pip install pulp
 ```
 
-**Dependencies:** [Python 3.x](https://www.python.org/download/releases/3.0/), database of the genome-scale metabolic reconstruction of human gut microbes [AGORA database](https://github.com/VirtualMetabolicHuman/AGORA),  a python package for metabolic modeling of microbial communities [MICOM](https://github.com/micom-dev/micom), a python package of an LP modeler [PuLP](https://pypi.org/project/PuLP/)
+**Dependencies:** [Python 3.x](https://www.python.org/download/releases/3.0/), database of the genome-scale metabolic reconstruction of human gut microbes [AGORA database](https://github.com/VirtualMetabolicHuman/AGORA) (default name dbs),  a python package for metabolic modeling of microbial communities [MICOM](https://github.com/micom-dev/micom), a python package of an LP modeler [PuLP](https://pypi.org/project/PuLP/)
 
 ## **Usage**
 
@@ -20,7 +20,7 @@ Bacdrive pipeline contains four modules:
 3. FMT process simulation: a) donor sample transplantation b) driver species transplantation
 
 ```
-usage: bakdrive.py [-h] {interaction,driver,fmt_donor,fmt_driver,fmt_only} ...
+usage: bakdrive [-h] {interaction,driver,fmt_donor,fmt_driver,fmt_only} ...
 
 positional arguments:
   {interaction,driver,fmt_donor,fmt_driver,fmt_only}
@@ -48,7 +48,7 @@ Infer ecological networks from metagenomic taxonomic classification results usin
 It can be used to calculate the bacterial interaction matrix. 
 
 ```
-usage: bakdrive.py interaction [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
+usage: bakdrive interaction [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
                                [-f FLAG] [-o OUTPUT]
                                input_file
 
@@ -72,7 +72,7 @@ optional arguments:
 **Example**
 
 ```
-python bakdrive.py interaction example/example_donor_input.txt -o example/donor_interaction
+python bakdrive interaction example/example_donor_input.txt -o example/donor_interaction
 ```
 
 ### **Step2** Driver Species Identification
@@ -84,7 +84,7 @@ driver_nodes. [customize]layer.str[customize].txt: a list of identified driver s
 [temp]_species_ko.str[customize].undirected.txt: an undirected ecological network of each sample 
 
 ```
-usage: bakdrive.py driver [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
+usage: bakdrive driver [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
                           input_folder
 
 positional arguments:
@@ -102,7 +102,7 @@ optional arguments:
 
 **Example**
 ```
-python bakdrive.py driver example/donor_interaction -o example/donor_drivers
+python bakdrive driver example/donor_interaction -o example/donor_drivers
 ```
 
 
@@ -131,7 +131,7 @@ fmt_abd_[temp].txt: the last timepoint of species abundance. \
 fmt_timepoints_[temp].txt: a time series of species abundance.  
 
 ```
-usage: bakdrive.py fmt_donor [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
+usage: bakdrive fmt_donor [-h] [-m MEDIUM] [-d MODEL] [-p PERCENTAGE]
                              [-s STRENGTH] [-o OUTPUT]
                              input_file
 
@@ -153,7 +153,7 @@ optional arguments:
 ```
 **Example**
 ```
-python bakdrive.py fmt_donor example/example_fmt_input.txt -o example/fmt_donor_output
+python bakdrive fmt_donor example/example_fmt_input.txt -o example/fmt_donor_output
 ```
 
 #### b) FMT driver species 
@@ -174,7 +174,7 @@ fmt_abd_[temp].txt: the last timepoint of species abundance\
 fmt_timepoints_[temp].txt: a time series of species abundance 
 
 ```
-usage: bakdrive.py fmt_driver [-h] [-i DRIVER] [-a AMOUNT] [-m MEDIUM]
+usage: bakdrive fmt_driver [-h] [-i DRIVER] [-a AMOUNT] [-m MEDIUM]
                               [-d MODEL] [-p PERCENTAGE] [-s STRENGTH]
                               [-o OUTPUT]
                               input_file
@@ -202,7 +202,7 @@ optional arguments:
 
 **Example**
 ```
-python bakdrive.py fmt_driver example/example_disease_input.txt -i example/donor_drivers/driver_nodes.3layer.str02.txt -o example/fmt_driver_output
+python bakdrive fmt_driver example/example_disease_input.txt -i example/donor_drivers/driver_nodes.3layer.str02.txt -o example/fmt_driver_output
 ```
 
 #### c) FMT only
@@ -215,7 +215,7 @@ Given an inferred ecological network of an after-FMT or ADT sample, fmt_only sim
 [temp]_growth_rate.tsv: growth rate vector
 
 ```
-usage: bakdrive.py fmt_only [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
+usage: bakdrive fmt_only [-h] [-s STRENGTH] [-p PREFIX] [-o OUTPUT]
                             input-file
 
 positional arguments:
@@ -233,7 +233,7 @@ optional arguments:
 
 **Example**
 ```
-python bakdrive.py fmt_only example/fmt_driver_output/disease1_species_drivers -o example/disease1_drivers_fmt_only
+python bakdrive fmt_only example/fmt_driver_output/disease1_species_drivers -o example/disease1_drivers_fmt_only
 ```
 
 ## **Description**
