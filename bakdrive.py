@@ -58,7 +58,6 @@ def interaction_inference(input_file,model_address,medium_file,output,threshold,
         data = {'id': ids, "species": species, \
                 'file': model_files, "abundance": abundance}
         df = pd.DataFrame(data=data)
-        print(df)
         build_community(df,output,sample,medium_file,flag)
     return
 
@@ -145,7 +144,6 @@ def MDSM(input_folder, strength, output, prefix):
     for var in prob.variables():
         if var.value() == 1:
             driver.append(str(var.name)[6:])
-    print("drivers",driver)
     handle.write("@Total number of drivers: %i\n"%len(driver))
     handle.write("\n".join(driver))
 #
@@ -270,7 +268,6 @@ def fmt_community(dis_sample,donor_sample,output,prefix,threshold, models):
     data = {'id': ids, "species": species, \
             'file': model_files, "abundance": abundance}
     df = pd.DataFrame(data=data)
-    print(df)
     return df, abs_dict
 #STEP2 build community (Driver)
 def fmt_driver_community(dis_sample,driver_file,amount,output,prefix,threshold,model_address):
@@ -285,16 +282,13 @@ def fmt_driver_community(dis_sample,driver_file,amount,output,prefix,threshold,m
     patient_species = list(abs_dict.keys()) 
     handle.write("%s\t%f\t%s\n"%(dis_sample,match_frac,unmatch))
     drivers = [x.strip() for x in open(driver_file) if x[0] != "@"]
-    print("input_drivers",drivers)
     #driver species transplantation
     for sp in drivers:
         name = convert(sp)
         match = list(filter(lambda x: name == "_".join(x.split("/")[-1].split("_")[:2]), models))
-        print(name,match)
         # species not found in disease
         if (len(match) > 0) and (name not in patient_species):
             strain = match[0].split("/")[-1].split(".")[0]
-            print("add species", strain)
             #add amount driver species
             # *0.1: pre-FMT bowel cleansing
             abs_dict[name] = (strain, match[0], amount*0.1)
@@ -307,7 +301,6 @@ def fmt_driver_community(dis_sample,driver_file,amount,output,prefix,threshold,m
     data = {'id': ids, "species": species, \
             'file': model_files, "abundance": abundance}
     df = pd.DataFrame(data=data)
-    print(df)
     return df, abs_dict
 
 #STEP3 Infer bacteria interaction
@@ -317,17 +310,17 @@ def fmt_process(recovery,output,prefix,strength):
     # relative growth rate
     r = parse_growth("%s/%s_growth_rate.tsv"%(output,prefix))
     xx_fmt, x_fmt = glv_Euler_type(recovery,A,r)
-    if "nan" in list(map(str, x_fmt)): # nan aboundance in the timepoints
-        for item in xx_fmt[::-1]: # loop from back
-            neg_count = len(list(filter(lambda x: (round(x,6) <= 0), item)))
-            extreme_large = len(list(filter(lambda x: (x>200), item)))
-            #  no negative value in the matrix
+    neg_count = len(list(filter(lambda x: (round(x,3) <= 0),x_fmt)))
+    extreme_large = len(list(filter(lambda x: (x > 200),x_fmt)))
+    if ("nan" in list(map(str, x_fmt))) or ("inf" in list(map(str, x_fmt))) or (neg_count == 0) or (extreme_large == 0):
+        for item in xx_fmt[::-1]:
+            neg_count = len(list(filter(lambda x: (round(x,3) <= 0), item)))
+            extreme_large = len(list(filter(lambda x: (x > 200), item)))
             if (neg_count == 0) and (extreme_large == 0) \
-                    and ("nan" not in list(map(str, item)))\
+                    and ("nan" not in list(map(str,item))) \
                     and ("inf" not in list(map(str,item))):
                 x_fmt = item
                 break
-        print("after",x_fmt)
     np.savetxt('%s/fmt_abd_%s.txt'%(output,prefix),x_fmt,fmt='%.3f')
     np.savetxt('%s/fmt_timepoints_%s.txt'%(output,prefix),xx_fmt,fmt='%.3f')
 
@@ -346,20 +339,17 @@ def fmt_only_process(input_file,output_folder,prefix, strength):
     # relative growth rate
     r = parse_growth("%s_growth_rate.tsv"%input_file)
     xx_fmt, x_fmt = glv_Euler_type(recovery,A,r)
-    print("original",x_fmt)
     neg_count = len(list(filter(lambda x: (round(x,3) <= 0),x_fmt)))
     extreme_large = len(list(filter(lambda x: (x > 200),x_fmt)))
     if ("nan" in list(map(str, x_fmt))) or ("inf" in list(map(str, x_fmt))) or (neg_count == 0) or (extreme_large == 0):
         for item in xx_fmt[::-1]:
             neg_count = len(list(filter(lambda x: (round(x,3) <= 0), item)))
             extreme_large = len(list(filter(lambda x: (x > 200), item)))
-            #print(neg_count, extreme_large)
             if (neg_count == 0) and (extreme_large == 0) \
                     and ("nan" not in list(map(str,item))) \
                     and ("inf" not in list(map(str,item))):
                 x_fmt = item
                 break
-        print("after",x_fmt)
     np.savetxt('%s/fmt_abd_%s.txt'%(output_folder,prefix),x_fmt,fmt='%.3f')
     np.savetxt('%s/fmt_timepoints_%s.txt'%(output_folder,prefix),xx_fmt,fmt='%.3f')
     return
