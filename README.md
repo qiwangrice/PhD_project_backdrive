@@ -5,7 +5,7 @@ Data analysis script and final results for the publilcation are in the data bran
 
 ## Installation 
 
-1. Download from gitlab
+1. Install from gitlab
 
 ```
 pip install micom
@@ -13,7 +13,7 @@ pip install pulp
 git clone git@gitlab.com:treangenlab/bakdrive.git
 ```
 
-2. Download from bioconda 
+2. Install from bioconda 
 
 ```
 conda install bakdrive
