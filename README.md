@@ -5,12 +5,23 @@ Data analysis script and final results for the publilcation are in the data bran
 
 ## Installation 
 
+1. Download from gitlab
+
 ```
 pip install micom
-pip install pulp
+pip install pulp 
+git clone git@gitlab.com:treangenlab/bakdrive.git
 ```
 
-**Dependencies:** [Python 3.x](https://www.python.org/download/releases/3.0/), database of the genome-scale metabolic reconstruction of human gut microbes [AGORA database](https://github.com/VirtualMetabolicHuman/AGORA) (default name dbs),  a python package for metabolic modeling of microbial communities [MICOM](https://github.com/micom-dev/micom), a python package of an LP modeler [PuLP](https://pypi.org/project/PuLP/)
+2. Download from bioconda 
+
+```
+conda install bakdrive
+```
+
+**Dependencies:** [Python 3.x](https://www.python.org/download/releases/3.0/),  a python package for metabolic modeling of microbial communities [MICOM](https://github.com/micom-dev/micom), a python package of an LP modeler [PuLP](https://pypi.org/project/PuLP/)
+
+**Database:** Database of the genome-scale metabolic reconstruction of human gut microbes [AGORA database](https://github.com/VirtualMetabolicHuman/AGORA) (default name dbs); Average western diet medium (default medium.csv)
 
 ## **Usage**
 
