@@ -1,0 +1,2 @@
+Disease	Number of FMT Species	Pre-FMT Node0	Post-FMT Node0	Pre-FMT Percentage	Post-FMT Percentage
+1	2	0.608758	0.530444	0.427390	0.109428
