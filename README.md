@@ -1,7 +1,7 @@
 # **Bakdrive Pipeline**
 
 Find driver species from real metagenomic data and simulate fecal microbial transplantation (FMT) process
-Data analysis script and final results for the publilcation are in the data branch. 
+Data analysis script and final results for the publilcation are in the data branch. Publication is [here] (https://academic.oup.com/bioinformatics/article/39/Supplement_1/i47/7210449#409576292)
 
 ## Installation 
 
